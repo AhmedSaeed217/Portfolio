@@ -1,0 +1,13 @@
+.spinner{
+    height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner i{
+    font-size: 50px;
+    color: var(--text-color);
+
+}

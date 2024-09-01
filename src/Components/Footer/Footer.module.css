@@ -1,0 +1,38 @@
+.footer {
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer .footerContent {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer .copyRights h2 {
+    color: var(--footer-text-color);
+    font-size: 20px;
+}
+
+.footer .icons {
+    display: flex;
+    gap: 14px;
+
+}
+
+footer .icons i {
+    font-size: 20px;
+    color: var(--footer-text-color);
+
+}
+
+@media (max-width:550px) {
+    .footer .footerContent {
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+}

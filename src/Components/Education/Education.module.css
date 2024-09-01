@@ -1,0 +1,101 @@
+.education {
+    padding: 40px 0;
+    margin: 80px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col{
+width: 48%;
+
+} 
+
+.row .col .heading{
+padding: 20px 10px;
+font-size: 30px;
+}
+
+.row .col{
+    border-left: 1px solid var(--form-text-color);
+
+}
+.row .col .boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row .col .boxes .box{
+    padding: 15px 25px;
+    /* border-left: 1px solid var(--form-text-color); */
+    cursor: pointer;
+    position: relative;
+}
+
+.row .col .boxes .box::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f19d";
+    position: absolute;
+    right: calc(100% - 15px);
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--form-text-color);
+    color: var(--btn-text-color);
+    text-align: center;
+    line-height: 30px;
+}
+.row .col .customBoxes .box::before{
+    content: "\f0b1";
+
+}
+
+
+/* .row .col::before{
+    content: "\f19c";
+    content: '';
+    position: absolute;
+    right: calc(100% - 15px);
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--form-text-color);
+} */
+
+.row .col .boxes .box h2 span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.row .col .boxes .box h3{
+    margin: 5px 0;
+}
+
+
+@media (max-width:900px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .row .col{
+        width: 90%;
+        
+        }
+}
+
+
+@media (max-width:500px) {
+
+    .row .col{
+        width: 100%;
+        
+        }
+}
